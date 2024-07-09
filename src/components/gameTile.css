@@ -1,0 +1,27 @@
+.wrapper {
+    height: 300px;
+    width: 200px;
+    text-align: center;
+    margin: 10px;
+}
+
+.boxArt {
+    width: 200px;
+    height: 260px;
+    background: none;
+    background-size: cover;
+    border-style: none;
+    &:hover {
+        border-style: solid;
+        border-image: 
+            linear-gradient(
+            to bottom, 
+            rgba(103, 193, 245, 0.8),
+            rgba(103, 193, 245, 0)
+            ) 0 80%;
+    }
+}
+
+p {
+    color: white;
+}

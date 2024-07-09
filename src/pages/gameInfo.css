@@ -1,0 +1,65 @@
+.infoContainer {
+    padding: 10px;
+    height: 850px;
+    width: 850px;
+    margin-top: 30px;
+    background-image: linear-gradient(to top, rgba(35,75,110, 0) ,rgba(35,75,110, 0.15));
+}
+
+.details {
+    width: 350px;
+    float: right;
+    height: 100%;
+}
+
+.title {
+    font-family: 'arial';
+    font-size: '34px';
+    color: rgba(255,255,255,.9);
+    margin-top: 20px;
+    float: 'left';
+    height: 80px;
+}
+
+.gameInfo {
+    color: #677a85;
+    text-transform: uppercase;
+
+    :first-child {
+        color: #67c1f5
+    }
+}
+
+.image {
+    width:100%;
+    height: 350px;
+}
+
+.gameImage {
+    margin-right: 80px;
+    margin-top: 20px;
+    height: 350px;
+    width: 290px;
+}
+
+.gameDescription {
+    h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        color: #fff;
+        font-size: 16px;
+        margin-top: 60px;
+        margin-left: 65px;
+        text-transform: uppercase;
+    }
+
+    .gradientHr {
+        width: 85%;
+    }
+
+    p {
+        font-family: 'arial';
+        font-size: 16px;
+        color: #acb2b8;
+        margin-left: 65px;
+    }
+}
