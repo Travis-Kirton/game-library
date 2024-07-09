@@ -22,21 +22,12 @@ app.use((req, res, next)  => {
     next();
   });
 
-const findAllGames = async () => {
-    try {
-        const conn = await mysql.createConnection(CONFIG);
-        const [rows] = await conn.execute('SELECT * FROM game');
-        conn.close();
-        return rows;
-    } catch (e) {
-        throw e;
-    }
-}
+// FIX ME: method to get all games?
 
 const findGameById = async (id) => {
     try {
         const conn = await mysql.createConnection(CONFIG);
-        const [rows] = await conn.execute('SELECT * FROM game where id = ?', [id]);
+        const [rows] = await conn.execute('FIX ME', [id]);
         conn.close();
         return rows[0];
     } catch (e) {
@@ -49,7 +40,7 @@ app.listen('4000', () => {
 });
 
 app.get('/api/games', async (req, res) => {
-    res.json(await findAllGames());
+    // FIX ME
 });
 
 app.get('/api/games/:_id', async (req, res) => {

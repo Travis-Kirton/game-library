@@ -10,7 +10,7 @@ const GameInfo = (props) => {
     const { id } = useParams();
 
     useEffect(() => {
-        fetch(`http://localhost:4000/api/games/${id}`)
+        fetch(`FIX ME`)
             .then(data => data.json())
             .then(data => {
                 setGame(data);
@@ -18,7 +18,7 @@ const GameInfo = (props) => {
     }, []);
 
     const formatDate = (date) => {
-        return date.split('T')[0];
+        return date; // FIX ME
     }
 
     return game && (

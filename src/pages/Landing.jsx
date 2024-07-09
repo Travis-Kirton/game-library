@@ -8,11 +8,7 @@ const Landing = () => {
     const [games, setGames] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:4000/api/games')
-            .then(data => data.json())
-            .then(data => {
-                setGames(data);
-            });
+        // FIX ME: should be getting all games?
     }, []);
 
     return (
