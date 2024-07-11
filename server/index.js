@@ -2,7 +2,7 @@ const mysql = require('mysql2/promise');
 const express = require('express');
 
 const CONFIG = {
-    host: '34.68.134.0',
+    host: '',
     user: 'root',
     database: 'game-lib'
 };
