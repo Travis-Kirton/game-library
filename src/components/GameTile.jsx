@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 import './gameTile.css';
 
 const GameTile = (props) => {
-
     return (
         <div className="wrapper">
             <Link to={`/game/${props.gameInfo.id}`}>
@@ -11,7 +10,7 @@ const GameTile = (props) => {
                 <img className="boxArt" src={props.gameInfo.image_url} alt={props.gameInfo.title}/>
             </div>
           </Link>
-          <p>FIX ME: title?</p>
+          <p>FIX ME: show title</p>
         </div>
     );
 }
