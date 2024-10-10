@@ -10,7 +10,7 @@ const GameTile = (props) => {
                 <img className="boxArt" src={props.gameInfo.image_url} alt={props.gameInfo.title}/>
             </div>
           </Link>
-          <p>FIX ME: show title</p>
+          <p>{props.gameInfo.title}</p>
         </div>
     );
 }

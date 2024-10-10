@@ -9,6 +9,12 @@ const Landing = () => {
 
     useEffect(() => {
         // FIX ME: should be getting all games?
+        fetch('http://localhost:3001/games')
+            .then(data => data.json())
+            .then (results => {
+                console.log(results);
+                setGames(results);
+            })
     }, []);
 
     return (

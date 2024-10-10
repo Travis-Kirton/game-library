@@ -10,7 +10,7 @@ const GameInfo = (props) => {
     const { id } = useParams();
 
     useEffect(() => {
-        fetch(`FIX ME`)
+        fetch(`http://localhost:3001/games/${id}`)
             .then(data => data.json())
             .then(data => {
                 setGame(data);
